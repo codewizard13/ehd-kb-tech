@@ -168,7 +168,7 @@ Here’s a visual quick reference for common HTML color names:
 | 2023      | Repo created as `ehw-cheatsheets`, inspired by [Christian Lempa’s Cheatsheets](https://github.com/ChristianLempa/cheat-sheets) |
 | 2024–2025 | Major expansion into multi-domain knowledge base                                                                               |
 | Dec 2025  | Renamed and rebranded → `ehd-kb-tech`                                                                                          |
-
+|2026-09-26| Add `rchaix/helpfuld` markdown version, formatted and sanitized for 2026; add kb about loop invariant proofs |
 
 ---
 
