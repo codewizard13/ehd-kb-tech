@@ -3,7 +3,7 @@
 ```md
 Create a wiki-style kb in the given template format with the given source content with these requirements:
 
-12/09/25 Requirements:
+09/26/26 Requirements:
 
 - CONTENT: If 'CONTEXT' section exists below, use it. Otherwise Use the full previous chat as the context.
 - Ensure Title is title case, never snake case
