@@ -94,7 +94,6 @@ In C++, built-in array indexing does not automatically stop a program from acces
   - [📚 References / See Also](#-references--see-also)
     - [C++ Bounds Safety](#c-bounds-safety)
     - [Loop Correctness and Invariants](#loop-correctness-and-invariants)
-    - [Native Collapsible HTML](#native-collapsible-html)
   - [✅ Revision History](#-revision-history)
 
 </details>
@@ -544,12 +543,6 @@ boundary value analysis C++ arrays
 - [Minimum Algorithm — Loop Invariant — Proof of Correctness](https://www.youtube.com/watch?v=ndFArXAsPsc)
 - [Basics of Specification and Verification: Lecture 1, Loop Invariants](https://www.youtube.com/watch?v=J0FGb6PyO_k)
 
-### Native Collapsible HTML
-
-- [MDN Web Docs: `<details>` HTML Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details)
-- [MDN Web Docs: `<summary>` HTML Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary)
-
-The native HTML `<details>` and `<summary>` elements create a collapsible disclosure widget without JavaScript. Clicking the `<summary>` element opens or closes the parent `<details>` element. [MDN: `<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details)
 
 ***
 
