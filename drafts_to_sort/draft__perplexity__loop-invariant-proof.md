@@ -107,20 +107,20 @@ In C++, built-in array indexing does not automatically stop a program from acces
 An array’s **bounds** are the legal limits of its indexes.
 
 ```cpp
-int scores [willcrichton](https://willcrichton.net/notes/systems-programming/) = {90, 80, 70, 60, 50};
+int scores[5] = {90, 80, 70, 60, 50};
 ```
 
 This array holds five elements. Its legal indexes are:
 
 ```text
 scores[0]
-scores [en.wikipedia](https://en.wikipedia.org/wiki/Systems_programming)
-scores [coursera](https://www.coursera.org/in/articles/system-programming)
-scores [en.cppreference](https://en.cppreference.com/cpp/language/array)
-scores [learn.microsoft](https://learn.microsoft.com/en-us/cpp/cpp/arrays-cpp?view=msvc-170)
+scores[1]
+scores[2]
+scores[3]
+scores[4]
 ```
 
-The expression `scores [willcrichton](https://willcrichton.net/notes/systems-programming/)` is invalid because it attempts to access a sixth element that does not exist.
+The expression `scores[5]` is invalid because it attempts to access a sixth element that does not exist.
 
 | Array Size | First Valid Index | Last Valid Index | Valid Index Rule |
 | --- | --- | --- | --- |
@@ -200,7 +200,7 @@ When reviewing code, do not merely ask whether a loop “looks right.” Determi
 using namespace std;
 
 int main() {
-    int values [willcrichton](https://willcrichton.net/notes/systems-programming/) = {10, 20, 30, 40, 50};
+    int values[5] = {10, 20, 30, 40, 50};
 
     for (int i = 0; i < 5; ++i) {
         cout << values[i] << '\n';
@@ -249,7 +249,7 @@ Therefore:
 i \in \{0, 1, 2, 3, 4\}
 \]
 
-Since `values[0]` through `values [learn.microsoft](https://learn.microsoft.com/en-us/cpp/cpp/arrays-cpp?view=msvc-170)` are valid, `values[i]` is safe for each loop iteration.
+Since `values[0]` through `values[4]` are valid, `values[i]` is safe for each loop iteration.
 
 ### Unsafe Loop Example
 
@@ -258,7 +258,7 @@ Since `values[0]` through `values [learn.microsoft](https://learn.microsoft.com/
 using namespace std;
 
 int main() {
-    int values [willcrichton](https://willcrichton.net/notes/systems-programming/) = {10, 20, 30, 40, 50};
+    int values[5] = {10, 20, 30, 40, 50};
 
     for (int i = 0; i <= 5; ++i) {
         cout << values[i] << '\n';
@@ -283,7 +283,7 @@ Possible values of i in the loop body:
 0, 1, 2, 3, 4, 5
 
 Problem:
-values [willcrichton](https://willcrichton.net/notes/systems-programming/) is outside the array.
+values[5] is outside the array.
 
 Conclusion:
 The code performs an out-of-bounds access.
@@ -310,7 +310,7 @@ Programmers must prove the safety of the full index expression, not just the loo
 using namespace std;
 
 int main() {
-    int values [willcrichton](https://willcrichton.net/notes/systems-programming/) = {10, 20, 30, 40, 50};
+    int values[5] = {10, 20, 30, 40, 50};
 
     for (int i = 0; i < 4; ++i) {
         cout << values[i + 1] << '\n';
@@ -362,7 +362,7 @@ for (int i = 0; i < 5; ++i) {
 }
 ```
 
-When `i` becomes `4`, the code accesses `values [willcrichton](https://willcrichton.net/notes/systems-programming/)`, which is invalid.
+When `i` becomes `4`, the code accesses `values[5]`, which is invalid.
 
 ***
 
